@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        String[] series = {"Game of Thrones", "Mr. Robot", "This is Us", "Rick and Morty"};
+        String[] series = {"Game of Thrones", "Mr. Robot", "This is Us", "Rick and Morty", "Mr. Robot", "This is Us", "Rick and Morty", "Mr. Robot", "This is Us", "Rick and Morty", "Mr. Robot", "This is Us", "Rick and Morty", "Mr. Robot", "This is Us", "Rick and Morty"};
 
         ListView listaSeries = (ListView) findViewById(R.id.lista_series);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, series);
