@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Series</string>
+    <string-array name="descricao_da_serie"></string-array>
 </resources>
