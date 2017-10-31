@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "818675899164",
+    "firebase_url": "https://series-eeb30.firebaseio.com",
+    "project_id": "series-eeb30",
+    "storage_bucket": "series-eeb30.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:818675899164:android:3541e1b9f517cfa0",
+        "android_client_info": {
+          "package_name": "com.example.andrelfa.series"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "818675899164-9l5lnu1fu8tb7lneus5jaf6l1r5s0gqc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsWdOcflxKFYzm3qlcsQoLKdMq1veBFu0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

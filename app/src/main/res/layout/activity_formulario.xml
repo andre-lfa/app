@@ -30,6 +30,7 @@
             android:numStars="5"
             android:max="10"
             android:layout_gravity="center" />
+
         <Button
             android:id="@+id/botao_salvar"
             android:layout_width="match_parent"
