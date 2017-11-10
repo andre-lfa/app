@@ -15,7 +15,7 @@ public class SerieActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_game_of_thrones);
+        setContentView(R.layout.activity_serie);
 
         Button botaoReview = (Button)(findViewById(R.id.novo_review));
         botaoReview.setOnClickListener(new View.OnClickListener() {

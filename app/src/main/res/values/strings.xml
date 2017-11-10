@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Series</string>
-    <string name="descricao_da_serie">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum augue luctus, porta tortor in, ornare ligula. Duis urna libero, tincidunt vel convallis et, auctor sit amet elit. In hendrerit augue eu lacus pharetra pulvinar. Praesent in ligula non nibh feugiat mattis. Maecenas et porta elit, id pellentesque orci. Aliquam erat volutpat. Vivamus dapibus, enim nec venenatis sagittis, est lacus gravida urna, ut fringilla felis eros ac dui. Cras vitae sollicitudin eros. Etiam vel justo lorem. Praesent lobortis tellus ex, sit amet dapibus justo accumsan eget. Vestibulum at mi sit amet ipsum molestie efficitur sed quis sem. Phasellus tempus neque ac leo rutrum, at gravida lorem fringilla.
-        Morbi nisi sem, pulvinar vel enim id, rhoncus lobortis lorem. Ut bibendum a dolor porta pulvinar. Nam hendrerit pulvinar consectetur. Vivamus ac nisi eleifend justo egestas interdum ac ut erat. Etiam at enim et ex mollis vestibulum. Maecenas non placerat leo, at dignissim lorem. Donec arcu velit, cursus in dui eu, faucibus tincidunt tortor. Maecenas laoreet congue enim eget tristique. Nulla luctus, magna et interdum aliquet, magna mauris tincidunt turpis, vitae porta erat leo sed arcu. Ut sed augue id orci mattis eleifend. Aenean bibendum malesuada aliquet.</string>
+    <string name="descricao_game_of_thrones">asdasdadadasdasd</string>
+    <string name="descricao_rick_and_morty">tututtutututuutuutuu wabba labba dub dub</string>
+    <string name="descricao_this_is_us">popqoqpqpoqppoqpopipipipiopopiopiipoipiopi</string>
+    <string name="descricao_mr_robot">papapapapap hacker piririr ppopopo</string>
 </resources>
