@@ -1,5 +1,9 @@
 <resources>
-    <string name="app_name">Series</string>
+    <string name="app_name">Nevermore</string>
+    <string name="game_of_thrones">Game Of Thrones</string>
+    <string name="rick_and_morty">Rick and Morty</string>
+    <string name="this_is_us">This is Us</string>
+    <string name="mr_robot">Mr. Robot</string>
     <string name="descricao_game_of_thrones">asdasdadadasdasd</string>
     <string name="descricao_rick_and_morty">tututtutututuutuutuu wabba labba dub dub</string>
     <string name="descricao_this_is_us">popqoqpqpoqppoqpopipipipiopopiopiipoipiopi</string>
