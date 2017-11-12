@@ -12,10 +12,26 @@ import android.widget.Button;
  */
 
 public class SerieActivity extends AppCompatActivity {
+
+    public int serie = 2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_serie);
+        switch (serie){
+            case 1:
+                setContentView(R.layout.activity_game_of_thrones);
+                break;
+            case 2:
+                setContentView(R.layout.activity_mr_robot);
+                break;
+            case 3:
+                setContentView(R.layout.activity_rick_and_morty);
+                break;
+            case 4:
+                setContentView(R.layout.activity_this_is_us);
+                break;
+        }
 
         Button botaoReview = (Button)(findViewById(R.id.novo_review));
         botaoReview.setOnClickListener(new View.OnClickListener() {

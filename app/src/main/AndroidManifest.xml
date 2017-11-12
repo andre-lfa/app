@@ -18,10 +18,6 @@
         </activity>
 
         <activity android:name=".SerieActivity">
-
-        </activity>
-        <activity android:name=".SplashScreenActivity"
-            android:theme="@style/AppCompat.TelaCheia">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,7 +25,8 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".ReviewActivity">
+        <activity android:name=".SplashScreenActivity"
+            android:theme="@style/AppCompat.TelaCheia">
 
         </activity>
     </application>
