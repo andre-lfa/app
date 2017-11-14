@@ -13,7 +13,7 @@ import android.widget.Button;
 
 public class SerieActivity extends AppCompatActivity {
 
-    public int serie = 2;
+    public int serie = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
