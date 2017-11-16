@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/voto_positivo"
+        android:icon="@drawable/ic_gostei"
+        app:showAsAction="always"
+        android:title="Curti!"
+        android:iconTint="@color/colorCategory"/>
+    <item android:id="@+id/voto_negativo"
+        android:icon="@drawable/ic_nao_gostei"
+        app:showAsAction="always"
+        android:title="Não Curti" />
+    <item android:id="@+id/visualizado"
+        android:icon="@drawable/ic_visto"
+        app:showAsAction="always"
+        android:title="Visto" />
+    <item android:id="@+id/nao_visualizado"
+        android:icon="@drawable/ic_nao_visto"
+        android:title="Não Visto"
+        app:showAsAction="always"/>
+</menu>

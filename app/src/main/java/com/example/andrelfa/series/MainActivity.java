@@ -14,7 +14,6 @@ public class MainActivity extends AppCompatActivity {
     protected void Toolbar () {
         Toolbar toolbar = (Toolbar) findViewById(R.id.my_toolbar);
         toolbar.setTitle("NERVERMORE");
-        toolbar.setSubtitle("Serialize-se!");
         toolbar.setLogo(R.mipmap.ic_launcher);
     }
 
