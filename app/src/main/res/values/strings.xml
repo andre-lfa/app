@@ -9,4 +9,13 @@
     <string name="descricao_rick_and_morty">Rick Sanchez é um cientista genial e alcoólatra que foi morar com a família de sua filha (Beth), uma cirurgiã cardíaca de equinos. Ele divide seu tempo entre desenvolver projetos altamente tecnológicos em seu laboratório (garagem da casa de Beth) e levar seu neto de 14 anos Morty em aventuras perigosas e surreais pelo Multiverso. Combinados com tensões preexistentes dentro da família, esses eventos causam ao sensível Morty muita angústia em casa e na escola.</string>
     <string name="descricao_this_is_us">A série é uma crônica da relação de um grupo de pessoas que nasceram no mesmo dia. Rebecca e Jack são um casal esperando trigêmeos em Pittsburgh. Kevin é um belo ator de televisão que está cansado de fazer papéis superficiais, Kate é uma mulher obesa que vive uma eterna luta para perder peso e Randall reencontra seu pai biológico que o abandonou quando ele era apenas um bebê recém-nascido.</string>
     <string name="descricao_mr_robot">Elliot (Rami Malek) é um jovem engenheiro de segurança que tem fobia social. Ele trabalha como técnico de segurança virtual durante o dia, e como hacker vigilante durante a noite. Elliot se vê numa encruzilhada quando o líder (Christian Slater) de um misterioso grupo de hackers o recruta para destruir a firma que ele é pago para proteger. Motivado pelas suas crenças pessoais, ele luta para resistir à chance de destruir os CEOs da multinacional que ele acredita estarem controlando - e destruindo - o mundo, a Evil Corp.</string>
+
+    <string-array name="nota_array">
+        <item>Espetacular!</item>
+        <item>Ótima!</item>
+        <item>Mediana.</item>
+        <item>Já vi melhores.</item>
+        <item>Horrível</item>
+        <item>Quem foi o imbecil que me indicou isso?</item>
+    </string-array>
 </resources>
