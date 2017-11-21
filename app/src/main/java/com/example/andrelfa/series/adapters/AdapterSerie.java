@@ -1,13 +1,11 @@
 package com.example.andrelfa.series.adapters;
 
-import android.support.v4.view.ViewGroupCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.Toast;
-
 import com.example.andrelfa.series.R;
 
 /**
@@ -39,7 +37,7 @@ public class AdapterSerie extends RecyclerView.Adapter<AdapterSerie.ViewHolder> 
         return img.length;
     }
 
-    public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
         private ImageView ivImagem;
 
