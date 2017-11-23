@@ -18,8 +18,6 @@ public class LoginActivity extends AppCompatActivity {
 
     private EditText login_usuario;
     private EditText login_senha;
-    private Button botao_login;
-    private Button botao_cadastrar;
     private SharedPreferences prefs;
 
     @Override
@@ -29,8 +27,8 @@ public class LoginActivity extends AppCompatActivity {
 
         login_usuario = (EditText) findViewById(R.id.campo_login);
         login_senha = (EditText)findViewById(R.id.campo_senha);
-        botao_login = (Button)findViewById(R.id.login);
-        botao_cadastrar = (Button)findViewById(R.id.cadastrar);
+        Button botao_login = (Button) findViewById(R.id.login);
+        Button botao_cadastrar = (Button) findViewById(R.id.cadastrar);
 
         prefs = getSharedPreferences("com.example.andrelfa.series", Context.MODE_PRIVATE);
 
@@ -49,7 +47,6 @@ public class LoginActivity extends AppCompatActivity {
                 if(usuario.equalsIgnoreCase(prefs.getString("admin", null)) && senha.equals(prefs.getString("admin", null))){
                     prefs.edit().putBoolean("status", true).apply();
                     startActivity(new Intent(LoginActivity.this, MainActivity.class));
-                    Toast.makeText(LoginActivity.this,"foi", Toast.LENGTH_SHORT).show();
                     finish();
                 }else{
                     Toast.makeText(LoginActivity.this, "Usuário ou senha inválidos, tente novamente!", Toast.LENGTH_SHORT).show();
