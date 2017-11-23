@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/sobre"
-        android:icon="@drawable/icone_corvo_lua"
         android:title="Sobre"
-        app:showAsAction="ifRoom"/>
+        app:showAsAction="always"
+        android:icon="@drawable/ic_action_name"/>
 
 </menu>

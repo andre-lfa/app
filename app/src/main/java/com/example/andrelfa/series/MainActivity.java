@@ -49,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.sobre:
-                Toast.makeText(this, "Sobre", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(this, SobreActivity.class));
             break;
         }

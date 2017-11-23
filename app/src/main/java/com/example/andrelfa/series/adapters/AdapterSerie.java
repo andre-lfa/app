@@ -1,13 +1,13 @@
 package com.example.andrelfa.series.adapters;
 
-import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.Toast;
-
+import com.example.andrelfa.series.GameOfThronesActivity;
 import com.example.andrelfa.series.R;
 
 /**
@@ -16,7 +16,6 @@ import com.example.andrelfa.series.R;
 
 public class AdapterSerie extends RecyclerView.Adapter<AdapterSerie.ViewHolder> {
 
-    private Context mcon;
 
     int img[] = {R.drawable.game_of_thrones, R.drawable.mr_robot, R.drawable.rick_and_morty, R.drawable.this_is_us};
 
@@ -53,15 +52,14 @@ public class AdapterSerie extends RecyclerView.Adapter<AdapterSerie.ViewHolder> 
 
         @Override
         public void onClick(View view) {
-            //Toast.makeText(view.getContext(),"foi",Toast.LENGTH_SHORT).show();
             for (int i:img) {
-                //if (img[i] == 0){
-                    //mcon.startActivity(new Intent(mcon, GameOfThronesActivity.class));
-                    Toast.makeText(view.getContext(),"foi",Toast.LENGTH_SHORT).show();
-                //}
+                if (i == img[0]){
+                    Toast.makeText(view.getContext(),"primeira",Toast.LENGTH_SHORT).show();
+                    Intent myIntent = new Intent(view.getContext(), GameOfThronesActivity.class);
+                    view.getContext().startActivity(myIntent);
+                }
             }
         }
     }
 }
-
 
