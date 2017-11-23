@@ -8,7 +8,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.Toast;
 import com.example.andrelfa.series.GameOfThronesActivity;
+import com.example.andrelfa.series.MrRobotActivity;
 import com.example.andrelfa.series.R;
+import com.example.andrelfa.series.RickAndMortyActivity;
+import com.example.andrelfa.series.ThisIsUsActivity;
 
 /**
  * Created by Android on 14/11/2017.
@@ -40,6 +43,7 @@ public class AdapterSerie extends RecyclerView.Adapter<AdapterSerie.ViewHolder> 
         return img.length;
     }
 
+
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
         private ImageView ivImagem;
@@ -52,14 +56,29 @@ public class AdapterSerie extends RecyclerView.Adapter<AdapterSerie.ViewHolder> 
 
         @Override
         public void onClick(View view) {
-            for (int i:img) {
-                if (i == img[0]){
-                    Toast.makeText(view.getContext(),"primeira",Toast.LENGTH_SHORT).show();
-                    Intent myIntent = new Intent(view.getContext(), GameOfThronesActivity.class);
+            int posit = getPosition();
+            Intent myIntent = new Intent();
+            switch (posit){
+                case 0:
+                    myIntent = new Intent(view.getContext(), GameOfThronesActivity.class);
                     view.getContext().startActivity(myIntent);
-                }
+                    break;
+                case 1:
+                    myIntent = new Intent(view.getContext(), MrRobotActivity.class);
+                    view.getContext().startActivity(myIntent);
+                    break;
+                case 2:
+                    myIntent = new Intent(view.getContext(), RickAndMortyActivity.class);
+                    view.getContext().startActivity(myIntent);
+                    break;
+                case 3:
+                    myIntent = new Intent(view.getContext(), ThisIsUsActivity.class);
+                    view.getContext().startActivity(myIntent);
+                    break;
             }
         }
+
+
     }
 }
 
