@@ -9,6 +9,9 @@
         android:id="@+id/imagem_serie"
         android:layout_width="193dp"
         android:layout_height="145dp"
-        app:srcCompat="@drawable/mr_robot" />
+        app:srcCompat="@drawable/mr_robot"
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        android:layout_gravity="center" />
 
 </android.support.v7.widget.CardView>
