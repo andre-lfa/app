@@ -40,14 +40,16 @@ public class LoginActivity extends AppCompatActivity {
 
                 SharedPreferences logins = getSharedPreferences(PREFS_NAME, 0);
 
-                if(usuario.equals(logins.getString("login_text_user", null))&&
+                 if(usuario.equals(logins.getString("login_text_user", null))&&
                         senha.equals(logins.getString("login_text_password",null))){
                     startActivity(new Intent(LoginActivity.this, MainActivity.class));
                     finish();
-                }else{
+                } else {
                     login_usuario.setError("Usuário inválido!");
                     login_senha.setError("Senha inválida!");
                 }
+
+
 
             }
         });
@@ -56,17 +58,25 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                SharedPreferences logins = getSharedPreferences(PREFS_NAME, 0);
-                SharedPreferences.Editor editor = logins.edit();
+                String usuario = login_usuario.getText().toString();
+                String senha = login_senha.getText().toString();
 
-                editor.putString("login_text_user",
-                        login_usuario.getText().toString());
-                editor.putString("login_text_password",
-                        login_senha.getText().toString());
+                if(usuario.equals("")){
+                    login_usuario.setError("Digite um usuário!");
+                } else if (senha.equals("")){
+                    login_senha.setError("Digite uma senha!");
+                } else {
+                    SharedPreferences logins = getSharedPreferences(PREFS_NAME, 0);
+                    SharedPreferences.Editor editor = logins.edit();
 
-                editor.commit();
-                startActivity(new Intent(LoginActivity.this, MainActivity.class));
-                finish();
+                    editor.putString("login_text_user",
+                            login_usuario.getText().toString());
+                    editor.putString("login_text_password",
+                            login_senha.getText().toString());
+                    editor.commit();
+                    startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                    finish();
+                }
             }
         });
 

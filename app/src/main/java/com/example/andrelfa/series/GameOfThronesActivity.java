@@ -17,8 +17,6 @@ import java.util.ResourceBundle;
 
 public class GameOfThronesActivity extends AppCompatActivity {
 
-    private SharedPreferences sharedPreferences;
-
     EditText nome = (EditText) findViewById(R.id.nomeReview);
     EditText review = (EditText) findViewById(R.id.novo_review);
 
@@ -26,14 +24,6 @@ public class GameOfThronesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_of_thrones);
-
-        SharedPreferences prefs = getSharedPreferences("com.example.andrelfa.series", MODE_PRIVATE);
-
-        String nomelocal = prefs.getString("nome", "");
-        String reviewlocal = prefs.getString("review", "");
-
-        nome.setText(nomelocal);
-        review.setText(reviewlocal);
 
         Button botaoReview = (Button)(findViewById(R.id.novo_review));
         botaoReview.setOnClickListener(new View.OnClickListener() {

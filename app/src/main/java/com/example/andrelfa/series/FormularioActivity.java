@@ -29,14 +29,6 @@ public class FormularioActivity extends AppCompatActivity {
         nome_review = (EditText) findViewById(R.id.nome);
         novo_review = (EditText) findViewById(R.id.novo_review);
         prefs = getSharedPreferences("com.example.andrelfa.series", Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = prefs.edit();
-
-        String usuario = nome_review.getText().toString();
-        String review = novo_review.getText().toString();
-
-        editor.putString("nome", usuario);
-        editor.putString("review",review);
-        editor.commit();
 
         Spinner spinner = (Spinner) findViewById(R.id.spinner_serie);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,

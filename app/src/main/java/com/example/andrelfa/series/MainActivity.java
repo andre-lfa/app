@@ -51,7 +51,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.sobre:
                 startActivity(new Intent(this, SobreActivity.class));
             break;
+            case R.id.logout:
+                startActivity(new Intent(this, LoginActivity.class));
         }
+
         return super.onOptionsItemSelected(item);
     }
 }
