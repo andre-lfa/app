@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
             break;
             case R.id.logout:
                 startActivity(new Intent(this, LoginActivity.class));
+                finish();
         }
 
         return super.onOptionsItemSelected(item);

@@ -17,6 +17,8 @@ import android.widget.Toast;
 
 public class FormularioActivity extends AppCompatActivity {
 
+    public static final String PREFS = "REVIEW";
+
     private EditText nome_review;
     private EditText novo_review;
     private SharedPreferences prefs;
@@ -26,10 +28,8 @@ public class FormularioActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_formulario);
 
-        prefs = getSharedPreferences("com.example.andrelfa.series", Context.MODE_PRIVATE);
-
-        nome_review = (EditText) findViewById(R.id.nome);
-        novo_review = (EditText) findViewById(R.id.novo_review);
+        nome_review =(EditText) findViewById(R.id.nome);
+        novo_review = (EditText) findViewById(R.id.descricao);
 
         Spinner spinner = (Spinner) findViewById(R.id.spinner_serie);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
@@ -40,16 +40,20 @@ public class FormularioActivity extends AppCompatActivity {
         Button botaoSalvar = (Button) findViewById(R.id.botao_salvar);
         botaoSalvar.setOnClickListener(new View.OnClickListener() {
 
-            String nome = nome_review.getText().toString();
-            String review = novo_review.getText().toString();
-
             @Override
             public void onClick(View view) {
+                prefs = getSharedPreferences(PREFS, 0);
                 SharedPreferences.Editor editor = prefs.edit();
-                editor.putString(getString(R.string.nome), nome);
-                editor.putString(getString(R.string.review), review);
+
+                String usuario = nome_review.getText().toString();
+                String review = novo_review.getText().toString();
+
+                editor.putString("NOME", usuario);
+                editor.putString("REVIEW", review);
                 editor.commit();
+
                 Toast.makeText(FormularioActivity.this, "Review Salvo!", Toast.LENGTH_SHORT).show();
+                finish();
             }
         });
     }
