@@ -52,8 +52,8 @@ public class GameOfThronesActivity extends AppCompatActivity {
         if (prefs.getAll().size()>0){
             String nomelocal = prefs.getString("NOME", "");
             String reviewlocal = prefs.getString("REVIEW", "");
-            nome.setText("Nome:" + nomelocal);
-            review.setText("Review:" + reviewlocal);
+            nome.setText("NOME: " + nomelocal);
+            review.setText("REVIEW: " + reviewlocal);
         }
     }
 }
