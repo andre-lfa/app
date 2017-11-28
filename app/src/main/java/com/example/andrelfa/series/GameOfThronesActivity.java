@@ -17,9 +17,6 @@ import java.util.ResourceBundle;
 
 public class GameOfThronesActivity extends AppCompatActivity {
 
-    EditText nome = (EditText) findViewById(R.id.nomeReview);
-    EditText review = (EditText) findViewById(R.id.novo_review);
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

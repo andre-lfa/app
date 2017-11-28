@@ -32,7 +32,7 @@
         android:layout_width="56dp"
         android:layout_height="56dp"
         android:id="@+id/novo_review"
-        android:text="+"
+        android:text="@string/botaoReview"
         android:textColor="@color/colorSecundary"
         android:textSize="40sp"
         android:elevation="6dp"

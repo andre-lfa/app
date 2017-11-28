@@ -13,6 +13,14 @@
     <string name="descricao_mr_robot">Elliot (Rami Malek) é um jovem engenheiro de segurança que tem fobia social. Ele trabalha como técnico de segurança virtual durante o dia, e como hacker vigilante durante a noite. Elliot se vê numa encruzilhada quando o líder (Christian Slater) de um misterioso grupo de hackers o recruta para destruir a firma que ele é pago para proteger. Motivado pelas suas crenças pessoais, ele luta para resistir à chance de destruir os CEOs da multinacional que ele acredita estarem controlando - e destruindo - o mundo, a Evil Corp.</string>
 
     <string name="sobre">SOBRE O APLICATIVO: PROTÓTIPO CRIADO POR ANDRÉ LFA COMO PROJETO DE CONCLUSÃO DO SEMESTRE.</string>
+    <string name="hintNome">Nome</string>
+    <string name="hintReview">Review</string>
+    <string name="botaoSalvar">Salvar</string>
+    <string name="botaoReview">+</string>
+    <string name="hintLogin">Login</string>
+    <string name="hintSenha">Senha</string>
+    <string name="botaoLogin">Login</string>
+    <string name="botaoCadastrar">cadastrar</string>
     <string-array name="nota_array">
         <item>Espetacular!</item>
         <item>Ótima!</item>

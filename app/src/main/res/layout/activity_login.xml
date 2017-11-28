@@ -25,27 +25,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:hint="Login" />
+            android:hint="@string/hintLogin" />
 
         <EditText
             android:id="@+id/campo_senha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:hint="Senha" />
+            android:hint="@string/hintSenha" />
 
         <Button
             android:id="@+id/login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Login" />
+            android:text="@string/botaoLogin" />
 
         <Button
             android:id="@+id/cadastrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="cadastrar" />
+            android:text="@string/botaoCadastrar" />
     </LinearLayout>
 </ScrollView>

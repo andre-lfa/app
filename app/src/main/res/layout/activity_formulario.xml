@@ -10,13 +10,13 @@
         android:layout_height="match_parent">
 
         <EditText
-            android:hint="Nome"
+            android:hint="@string/hintNome"
             android:id="@+id/nome"
             android:layout_height="wrap_content"
             android:layout_width="match_parent" />
 
         <EditText
-            android:hint="Review"
+            android:hint="@string/hintReview"
             android:inputType="textMultiLine"
             android:id="@+id/descricao"
             android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
             android:id="@+id/botao_salvar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Salvar" />
+            android:text="@string/botaoSalvar" />
 
     </LinearLayout>
 
