@@ -26,9 +26,10 @@ public class FormularioActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_formulario);
 
+        prefs = getSharedPreferences("com.example.andrelfa.series", Context.MODE_PRIVATE);
+
         nome_review = (EditText) findViewById(R.id.nome);
         novo_review = (EditText) findViewById(R.id.novo_review);
-        prefs = getSharedPreferences("com.example.andrelfa.series", Context.MODE_PRIVATE);
 
         Spinner spinner = (Spinner) findViewById(R.id.spinner_serie);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
@@ -38,10 +39,17 @@ public class FormularioActivity extends AppCompatActivity {
 
         Button botaoSalvar = (Button) findViewById(R.id.botao_salvar);
         botaoSalvar.setOnClickListener(new View.OnClickListener() {
+
+            String nome = nome_review.getText().toString();
+            String review = novo_review.getText().toString();
+
             @Override
             public void onClick(View view) {
+                SharedPreferences.Editor editor = prefs.edit();
+                editor.putString(getString(R.string.nome), nome);
+                editor.putString(getString(R.string.review), review);
+                editor.commit();
                 Toast.makeText(FormularioActivity.this, "Review Salvo!", Toast.LENGTH_SHORT).show();
-                finish();
             }
         });
     }
