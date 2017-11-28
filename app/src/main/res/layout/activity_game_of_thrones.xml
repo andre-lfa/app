@@ -44,4 +44,22 @@
         android:background="@drawable/fundo"
         android:stateListAnimator="@null"/>
 
+    <TextView
+        android:id="@+id/nomeReview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/nome"
+        android:layout_below="@+id/text_view_id" />
+
+    <TextView
+        android:id="@+id/review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/nomeReview"
+        android:layout_alignRight="@+id/nomeReview"
+        android:layout_below="@+id/nomeReview"
+        android:text="@string/review" />
+
 </RelativeLayout>

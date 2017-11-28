@@ -61,7 +61,7 @@ public class LoginActivity extends AppCompatActivity {
                 String senha = login_senha.getText().toString().trim();
 
                 prefs.edit().putString("admin", usuario).apply();
-                prefs.edit().putString("admin",senha).apply();
+                prefs.edit().putString("senha",senha).apply();
                 prefs.edit().putBoolean("status", true).apply();
 
                 startActivity(new Intent(LoginActivity.this, MainActivity.class));
