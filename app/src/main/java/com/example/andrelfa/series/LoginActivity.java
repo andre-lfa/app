@@ -16,9 +16,10 @@ import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
 
+    public static final String PREFS_NAME = "MyPrefsFile";
+
     private EditText login_usuario;
     private EditText login_senha;
-    private SharedPreferences prefs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,44 +28,45 @@ public class LoginActivity extends AppCompatActivity {
 
         login_usuario = (EditText) findViewById(R.id.campo_login);
         login_senha = (EditText)findViewById(R.id.campo_senha);
+
         Button botao_login = (Button) findViewById(R.id.login);
         Button botao_cadastrar = (Button) findViewById(R.id.cadastrar);
-
-        prefs = getSharedPreferences("com.example.andrelfa.series", Context.MODE_PRIVATE);
-
-        if(prefs.getString("admin", null) != null){
-            login_usuario.setText(prefs.getString("admin", null));
-            login_senha.requestFocus();
-        }
 
         botao_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String usuario = login_usuario.getText().toString();
+                String senha = login_senha.getText().toString();
 
-                String usuario = login_usuario.getText().toString().trim();
-                String senha = login_senha.getText().toString().trim();
+                SharedPreferences logins = getSharedPreferences(PREFS_NAME, 0);
 
-                if(usuario.equalsIgnoreCase(prefs.getString("admin", null)) && senha.equals(prefs.getString("admin", null))){
-                    prefs.edit().putBoolean("status", true).apply();
+                if(usuario.equals(logins.getString("login_text_user", null))&&
+                        senha.equals(logins.getString("login_text_password",null))){
                     startActivity(new Intent(LoginActivity.this, MainActivity.class));
                     finish();
                 }else{
-                    Toast.makeText(LoginActivity.this, "Usuário ou senha inválidos, tente novamente!", Toast.LENGTH_SHORT).show();
+                    login_usuario.setError("Usuário inválido!");
+                    login_senha.setError("Senha inválida!");
                 }
+
             }
         });
 
         botao_cadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String usuario = login_usuario.getText().toString().trim();
-                String senha = login_senha.getText().toString().trim();
 
-                prefs.edit().putString("admin", usuario).apply();
-                prefs.edit().putString("senha",senha).apply();
-                prefs.edit().putBoolean("status", true).apply();
+                SharedPreferences logins = getSharedPreferences(PREFS_NAME, 0);
+                SharedPreferences.Editor editor = logins.edit();
 
+                editor.putString("login_text_user",
+                        login_usuario.getText().toString());
+                editor.putString("login_text_password",
+                        login_senha.getText().toString());
+
+                editor.commit();
                 startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                finish();
             }
         });
 
